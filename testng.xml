@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+  parallel="methods"        — each @Test method runs in its own thread
+  thread-count="3"          — max concurrent test threads
+  data-provider-thread-count="3" — max concurrent @DataProvider rows
+-->
+<suite name="Automation Suite" verbose="1"
+       parallel="methods"
+       thread-count="3"
+       data-provider-thread-count="3">
+
+    <listeners>
+        <listener class-name="com.automation.listeners.ScreenshotListener"/>
+        <listener class-name="com.automation.listeners.RetryAnnotationTransformer"/>
+        <listener class-name="com.automation.listeners.ExtentReportListener"/>
+    </listeners>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="com.automation.tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Register Tests">
+        <classes>
+            <class name="com.automation.tests.RegisterTest"/>
+        </classes>
+    </test>
+
+    <test name="Navigation Tests">
+        <classes>
+            <class name="com.automation.tests.NavigationTest"/>
+        </classes>
+    </test>
+
+</suite>

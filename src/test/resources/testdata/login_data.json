@@ -1,0 +1,12 @@
+[
+  {
+    "username": "invalid@example.com",
+    "password": "wrongpass",
+    "expectedResult": "failure"
+  },
+  {
+    "username": "",
+    "password": "",
+    "expectedResult": "failure"
+  }
+]

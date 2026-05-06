@@ -1,0 +1,30 @@
+{
+  "dev": {
+    "baseUrl": "http://localhost:3000",
+    "browser": "chrome",
+    "headless": true,
+    "implicitWaitSeconds": 5,
+    "explicitWaitSeconds": 10
+  },
+  "qa": {
+    "baseUrl": "https://qa.example.com",
+    "browser": "chrome",
+    "headless": true,
+    "implicitWaitSeconds": 5,
+    "explicitWaitSeconds": 15
+  },
+  "staging": {
+    "baseUrl": "https://staging.example.com",
+    "browser": "chrome",
+    "headless": false,
+    "implicitWaitSeconds": 5,
+    "explicitWaitSeconds": 20
+  },
+  "prod": {
+    "baseUrl": "https://example.com",
+    "browser": "chrome",
+    "headless": true,
+    "implicitWaitSeconds": 5,
+    "explicitWaitSeconds": 20
+  }
+}

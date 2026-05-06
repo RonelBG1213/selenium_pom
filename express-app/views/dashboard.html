@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="dashboard-card">
+
+      <div class="dashboard-icon">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="24" fill="#ecfdf5"/>
+          <path d="M16 24l6 6 10-12" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <h1 class="welcome-header">Welcome, Admin!</h1>
+      <p class="welcome-sub">You have successfully signed in.</p>
+
+      <div class="dashboard-stats">
+        <div class="stat-card">
+          <span class="stat-value">42</span>
+          <span class="stat-label">Tests Run</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">38</span>
+          <span class="stat-label">Passed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">4</span>
+          <span class="stat-label">Failed</span>
+        </div>
+      </div>
+
+      <a href="/logout" class="logout-btn">Sign out</a>
+
+    </div>
+  </div>
+</body>
+</html>

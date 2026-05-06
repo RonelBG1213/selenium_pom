@@ -1,0 +1,41 @@
+# ── Maven ────────────────────────────────────────────────────────────────────
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# ── IDE ──────────────────────────────────────────────────────────────────────
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.classpath
+*.project
+.settings/
+
+# ── Selenium / WebDriverManager cache ────────────────────────────────────────
+# Downloaded driver binaries — resolved at runtime; no need to commit
+.cache/
+.wdm/
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+surefire-reports/
+
+# ── Environment / secrets ─────────────────────────────────────────────────────
+# .env contains local defaults only (no secrets), but keep it out of git
+# so each developer/environment supplies their own.
+.env
+
+# ── OS noise ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Node (express-app) ───────────────────────────────────────────────────────
+express-app/node_modules/
+express-app/npm-debug.log*
+express-app/yarn-error.log

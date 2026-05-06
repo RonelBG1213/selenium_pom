@@ -1,0 +1,20 @@
+# Normalize line endings: store as LF in the repo, checkout as native on each OS.
+* text=auto
+
+# Shell scripts must always have LF so they execute correctly inside Docker/Linux.
+*.sh text eol=lf
+
+# Java, XML, JSON, HTML, EJS — let text=auto normalize these.
+*.java text
+*.xml  text
+*.json text
+*.html text
+*.ejs  text
+*.md   text
+*.css  text
+
+# Binaries — no line-ending conversion.
+*.jar  binary
+*.zip  binary
+*.png  binary
+*.jpg  binary

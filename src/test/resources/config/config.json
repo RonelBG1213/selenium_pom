@@ -1,0 +1,7 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "browser": "chrome",
+  "headless": true,
+  "implicitWaitSeconds": 5,
+  "explicitWaitSeconds": 10
+}

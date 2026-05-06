@@ -1,0 +1,33 @@
+[
+  {
+    "name": "New User",
+    "username": "newuser@example.com",
+    "password": "NewPass123!",
+    "confirmPassword": "NewPass123!",
+    "expectedResult": "success"
+  },
+  {
+    "name": "Admin",
+    "username": "admin@example.com",
+    "password": "Admin123!",
+    "confirmPassword": "Admin123!",
+    "expectedResult": "failure",
+    "expectedError": "An account with this email already exists."
+  },
+  {
+    "name": "",
+    "username": "user@example.com",
+    "password": "Pass123!",
+    "confirmPassword": "Pass123!",
+    "expectedResult": "failure",
+    "expectedError": "All fields are required."
+  },
+  {
+    "name": "User",
+    "username": "mismatch@example.com",
+    "password": "Pass123!",
+    "confirmPassword": "DifferentPass!",
+    "expectedResult": "failure",
+    "expectedError": "Passwords do not match."
+  }
+]
